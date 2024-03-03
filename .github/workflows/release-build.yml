@@ -24,7 +24,7 @@ jobs:
           git clone https://github.com/sbwml/v2ray-geodata
 
       - name: Building packages
-        uses: openwrt/gh-action-sdk@main
+        uses: sbwml/openwrt-gh-action-sdk@go1.22
         env:
           ARCH: ${{ matrix.arch }}-openwrt-21.02
           FEEDNAME: packages_ci
